@@ -24,7 +24,7 @@ const API_KEY = "";
 
 async function initialload(params) {
   const response = await axios.get(
-    `https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=REPLACE_ME`
+    `https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=live_wM5AjUFa4V3o9ji9P3lp8eNuvEkIEu6UoBoFAgSPtb73V4hqj39FzgNc1x8Hw1wK`
   );
   breedSelect.innerHTML = "";
   response.data.forEach((breed) => {
