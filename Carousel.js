@@ -1,4 +1,5 @@
-import * as bootstrap from "bootstrap";
+//import * as bootstrap from "bootstrap";
+// import { favourite } from "./axios.js";
 import { favourite } from "./index.js";
 
 export function createCarouselItem(imgSrc, imgAlt, imgId) {
@@ -39,7 +40,7 @@ export function start() {
   );
   if (window.matchMedia("(min-width: 768px)").matches) {
     const carousel = new bootstrap.Carousel(multipleCardCarousel, {
-      interval: false
+      interval: false,
     });
     const carouselWidth = $(".carousel-inner")[0].scrollWidth;
     const cardWidth = $(".carousel-item").width();
